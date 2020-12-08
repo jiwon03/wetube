@@ -79,4 +79,4 @@ uploads
 static
 build
 
-package-lock.json
+.DS_Store

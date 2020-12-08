@@ -12,6 +12,14 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.(js)$/,
+        use: [
+          {
+            loader: "babel-loader",
+          },
+        ],
+      },
+      {
         test: /\.(scss)$/,
         use: [
           {
@@ -50,7 +58,7 @@ const config = {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: "style.css",
+      filename: "styles.css",
     }),
   ],
 };
