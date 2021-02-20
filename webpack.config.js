@@ -61,6 +61,7 @@ const config = {
       filename: "styles.css",
     }),
   ],
+  devtool: "inline-source-map",
 };
 
 module.exports = config;

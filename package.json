@@ -5,12 +5,9 @@
   "author": "Jiwon",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.12.3",
     "@babel/node": "^7.12.1",
     "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.12.1",
     "autoprefixer": "^10.0.4",
-    "babel-loader": "^8.2.2",
     "body-parser": "^1.19.0",
     "connect-mongo": "^3.2.0",
     "cookie-parser": "^1.4.5",
@@ -41,6 +38,11 @@
     "build:assets": "cross-env WEBPACK_ENV=production webpack"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.12.15",
+    "@babel/preset-env": "^7.12.16",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.14.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^6.15.0",
